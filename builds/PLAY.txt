@@ -1,0 +1,22 @@
+SUMMIT - THE LONG WAY UP
+
+Extract this ZIP into a folder and double-click Summit.exe.
+Windows 10/11, 64-bit. No Godot installation or Internet connection needed.
+
+A/D or Left/Right : move
+Space/W/Up        : jump
+Shift             : sprint (uses stamina; rest to recharge)
+R                 : return to your latest camp
+Escape/P          : pause or resume
+M                 : mute/unmute sound
+Enter/Space       : begin or play again
+
+Reach all four camps, then the summit. Flags save progress for the current
+run. Falling returns you to your latest camp. Progress resets on exit.
+Higher slopes have wind; watch the indicator before jumping.
+
+This is an unsigned indie build. If Windows shows a publisher warning,
+verify the download came from the repository you trust before running it.
+
+Source and build instructions:
+https://github.com/olliezwmarshall-create/climb-mountain

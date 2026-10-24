@@ -1,0 +1,6 @@
+.godot/
+*.tmp
+builds/*
+!builds/PLAY.txt
+!builds/Summit-Windows-x64.zip
+!builds/Summit-Windows-x64.zip.sha256

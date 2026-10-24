@@ -1,0 +1,21 @@
+name: Test and build Windows game
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows-export:
+    runs-on: ubuntu-latest
+    env:
+      SUMMIT_TOOL_ROOT: /tmp/summit-tools
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install verified Godot and export templates
+        run: bash scripts/setup.sh
+      - name: Test gameplay and build Windows ZIP
+        run: bash scripts/build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Summit-Windows-x64
+          path: |
+            builds/Summit-Windows-x64.zip
+            builds/Summit-Windows-x64.zip.sha256
